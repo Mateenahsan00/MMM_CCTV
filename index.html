@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MMM CCTV & Networking Services | Elite Technical Solutions by Ahsan Ali</title>
+    
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="Elite CCTV installation, enterprise networking, and managed IT services in Rawalpindi & Islamabad. Managed by Ahsan Ali with 32+ years of expertise.">
+    <meta name="keywords" content="Corporate CCTV Rawalpindi, Enterprise Networking Pakistan, IT Infrastructure Islamabad, Ahsan Ali Security, Professional Surveillance">
+    <meta property="og:title" content="MMM CCTV & Networking Services | Professional Technical Solutions">
+    <meta property="og:description" content="Technical Excellence & Security Engineering. Managed by Veteran Specialist Ahsan Ali since 1994.">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* --- Executive Design System --- */
+        :root {
+            --primary: #020617; /* Midnight Slate */
+            --accent: #1d4ed8;  /* Deep Professional Blue */
+            --accent-soft: #eff6ff;
+            --white: #ffffff;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-600: #475569;
+            --slate-900: #0f172a;
+            --whatsapp: #16a34a;
+            --gold-accent: #b45309;
+            
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.04), 0 4px 6px -2px rgba(0,0,0,0.02);
+            --shadow-xl: 0 25px 50px -12px rgba(0,0,0,0.08);
+            
+            --transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            --radius-lg: 20px;
+            --radius-md: 12px;
+        }
+
+        /* --- Global Reset & Precision Layout --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--white);
+            color: var(--slate-900);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 120px 0;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .bg-alt { background-color: var(--slate-50); }
+
+        /* --- Elite Typography --- */
+        h1, h2, h3, h4, h5 {
+            color: var(--primary);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.04em;
+            margin-bottom: 1rem;
+        }
+
+        .section-tag {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.2em;
+            display: block;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin-bottom: 24px;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--slate-600);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--slate-100);
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 14px 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links { display: flex; gap: 32px; align-items: center; }
+            .nav-links a {
+                text-decoration: none;
+                color: var(--slate-900);
+                font-weight: 700;
+                font-size: 0.85rem;
+                transition: var(--transition);
+            }
+            .nav-links a:hover { color: var(--accent); }
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 36px;
+            border-radius: var(--radius-md);
+            font-weight: 800;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            gap: 12px;
+            font-size: 1rem;
+        }
+
+        .btn-primary { background: var(--primary); color: var(--white); }
+        .btn-accent { background: var(--accent); color: var(--white); }
+        .btn-whatsapp { background: var(--whatsapp); color: var(--white); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+
+        .btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-xl); }
+
+        /* --- Hero --- */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 60%);
+            text-align: center;
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 30px; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { font-size: 1.4rem; color: var(--slate-600); max-width: 900px; margin: 0 auto 48px; }
+
+        /* --- Card Grids --- */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .premium-card {
+            background: var(--white);
+            padding: 56px 48px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--slate-100);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 5px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: var(--transition);
+            transform-origin: left;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 40px 80px -20px rgba(2, 6, 23, 0.12);
+            border-color: var(--accent-soft);
+        }
+
+        .premium-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .card-icon { font-size: 3rem; color: var(--accent); margin-bottom: 32px; display: block; }
+        .premium-card h3 { font-size: 1.6rem; margin-bottom: 20px; line-height: 1.3; }
+        .premium-card p { font-size: 1.05rem; color: var(--slate-600); margin-bottom: 28px; line-height: 1.7; }
+        
+        .premium-card ul { list-style: none; margin-top: auto; padding-top: 28px; border-top: 1px solid var(--slate-100); }
+        .premium-card li { font-size: 0.95rem; color: var(--slate-900); font-weight: 600; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
+        .premium-card li strong { color: var(--accent); font-weight: 800; min-width: 100px; display: inline-block; }
+        .premium-card li::before { content: '→'; color: var(--accent); font-weight: 900; }
+
+        /* --- About Us --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) { .about-grid { grid-template-columns: 1.2fr 0.8fr; } }
+
+        .value-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            border-left: 5px solid var(--accent);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+        }
+
+        /* --- Owner Section --- */
+        .owner-profile {
+            background: var(--primary);
+            color: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) { .owner-profile { flex-direction: row; text-align: left; } }
+
+        .owner-image-box {
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid rgba(255,255,255,0.1);
+            flex-shrink: 0;
+        }
+        .owner-image-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .owner-text h2 { color: var(--white); font-size: 2.8rem; margin-bottom: 5px; }
+        .owner-text .title { color: var(--accent-soft); font-size: 1.15rem; font-weight: 700; margin-bottom: 30px; display: block; text-transform: uppercase; letter-spacing: 1px; }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .exp-item {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border-bottom: 3px solid var(--accent);
+        }
+
+        /* --- FAQ --- */
+        .faq-item { border-bottom: 1px solid var(--slate-200); padding: 30px 0; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; font-size: 1.2rem; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: var(--transition); color: var(--slate-600); padding-top: 0; }
+        .faq-item.active .faq-answer { max-height: 500px; padding-top: 20px; }
+        .faq-icon { font-size: 1.2rem; color: var(--accent); transition: var(--transition); }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
+
+        /* --- Contact --- */
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+        @media (min-width: 1024px) { .contact-card { grid-template-columns: 1fr 1.5fr; } }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--slate-50);
+            padding: 80px 0 40px;
+            color: var(--slate-600);
+            border-top: 1px solid var(--slate-100);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: var(--slate-900);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-nav a:hover {
+            color: var(--accent);
+        }
+
+        .fb-icon-simple {
+            color: #1877f2;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fb-icon-simple:hover {
+            transform: scale(1.15);
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid var(--slate-200);
+            width: 100%;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* --- Mobile Controls --- */
+        .mobile-toggle {
+            width: 44px; height: 44px;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            gap: 7px; cursor: pointer;
+            z-index: 1002;
+        }
+
+        @media (min-width: 1024px) { .mobile-toggle { display: none; } }
+
+        .mobile-toggle span { width: 28px; height: 3px; background: var(--primary); border-radius: 4px; transition: var(--transition); }
+        .mobile-toggle.active span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+        .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+        .mobile-toggle.active span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0; right: -100%;
+            width: 85%; max-width: 320px; height: 100vh;
+            background: var(--white);
+            z-index: 1001;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            gap: 20px; transition: 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+            box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+            padding: 40px 20px;
+        }
+
+        .mobile-menu.active { right: 0; }
+        .mobile-menu a { 
+            font-size: 1.2rem; 
+            font-weight: 700; 
+            color: var(--primary); 
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        .mobile-menu a:hover { background: var(--slate-50); color: var(--accent); }
+        .mobile-menu .btn-whatsapp { 
+            width: auto; 
+            font-size: 0.9rem; 
+            padding: 12px 24px; 
+            margin-top: 10px;
+        }
+
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp); color: white; width: 68px; height: 68px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; box-shadow: 0 15px 35px rgba(22, 163, 74, 0.4); z-index: 999; text-decoration: none; transition: var(--transition); animation: pulse 2s infinite; }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 768px) {
+            section { padding: 60px 0; }
+            .hero { padding: 120px 0 60px; }
+            .btn { width: 100%; padding: 14px 24px; font-size: 0.95rem; }
+            .owner-profile { padding: 40px 24px; gap: 40px; }
+            .owner-image-box { width: 220px; height: 220px; }
+            .owner-text h2 { font-size: 2rem; }
+            .contact-card { padding: 32px 20px; gap: 40px; }
+            .premium-card { padding: 32px 24px; }
+            .section-header { margin-bottom: 48px; }
+            .section-header h2 { font-size: 1.8rem; }
+            .section-header p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                MMM CCTV
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/923335224279" target="_blank" class="btn btn-whatsapp" style="padding: 10px 24px; font-size: 0.85rem;">WhatsApp Consultation</a>
+            </div>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/923335224279" target="_blank" class="btn btn-whatsapp">WhatsApp Consultation</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <span class="section-tag reveal">Premier Security Engineering</span>
+            <h1 class="reveal">High-Level <span>Security Solutions</span> and Enterprise <span>Networking Infrastructure</span></h1>
+            <p class="reveal">Mission-critical surveillance systems and high-performance network infrastructure, engineered with excellence under the leadership of Ahsan Ali, backed by 32+ years of industry expertise.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;" class="reveal">
+                <a href="https://wa.me/923335224279" target="_blank" class="btn btn-whatsapp">WhatsApp Ahsan Ali</a>
+                <a href="services.html" class="btn btn-primary">Our Solutions Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Value Proposition</span>
+                <h2>Why Trust MMM CCTV?</h2>
+                <p>Combining three decades of veteran field experience with a modern, client-centric approach to deliver unrivaled security and networking excellence.</p>
+            </div>
+            <div class="card-grid">
+                <div class="premium-card reveal">
+                    <span class="card-icon">🏆</span>
+                    <h3>Experienced Technical Expertise</h3>
+                    <p>With 32+ years in the industry, we have mastered every technical challenge in security and networking, from analog foundations to AI-driven ecosystems.</p>
+                </div>
+                <div class="premium-card reveal">
+                    <span class="card-icon">📐</span>
+                    <h3>Professional Installation Standards</h3>
+                    <p>We adhere to strict engineering protocols. Every cable is meticulously labeled, every node is tested, and every camera is precision-calibrated.</p>
+                </div>
+                <div class="premium-card reveal">
+                    <span class="card-icon">⚡</span>
+                    <h3>Rapid Project Execution</h3>
+                    <p>Our optimized workflows and decades of on-site experience allow us to deliver complex infrastructure projects within tight deadlines without compromising quality.</p>
+                </div>
+                <div class="premium-card reveal">
+                    <span class="card-icon">🛡️</span>
+                    <h3>Unwavering Technical Support</h3>
+                    <p>Our commitment extends beyond installation. We provide priority on-site support and 24/7 remote assistance to ensure your systems never fail.</p>
+                </div>
+                <div class="premium-card reveal">
+                    <span class="card-icon">💎</span>
+                    <h3>Elite Hardware Selection</h3>
+                    <p>We exclusively deploy genuine, enterprise-grade hardware from global leaders like Hikvision, Dahua, and Cisco for maximum system longevity.</p>
+                </div>
+                <div class="premium-card reveal">
+                    <span class="card-icon">📊</span>
+                    <h3>Transparent Business Value</h3>
+                    <p>We deliver high-end corporate solutions with clear, competitive pricing, providing the best return on investment for your security and IT budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Owner Profile -->
+    <section id="owner">
+        <div class="container">
+            <div class="owner-profile reveal">
+                <div class="owner-image-box">
+                    <img src="Ahsan.png" alt="Ahsan Ali - Veteran Technical Specialist">
+                </div>
+                <div class="owner-text">
+                    <span class="title">Founder & Chief Technical Officer</span>
+                    <h2>Ahsan Ali</h2>
+                    <p>Ahsan Ali is a distinguished veteran in the technical services sector with a professional career spanning **32+ years**. His journey began in the early 90s, mastering the fundamentals of electrical and communications engineering, and has since led him to manage some of the most complex CCTV and networking projects in Rawalpindi and Islamabad.</p>
+                    
+                    <div class="experience-grid">
+                        <div class="exp-item">
+                            <strong>32+ Years</strong>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Active Experience</p>
+                        </div>
+                        <div class="exp-item">
+                            <strong>1000+ Projects</strong>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Successfully Delivered</p>
+                        </div>
+                        <div class="exp-item">
+                            <strong>100% Success</strong>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Client Retention</p>
+                        </div>
+                    </div>
+
+                    <p>As the Lead Technical Specialist at MMM CCTV, Ahsan personally audits every project architecture, ensuring that his decades of expertise are embedded into every installation. He is a recognized consultant for security risk assessment and infrastructure planning.</p>
+
+                    <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
+                        <a href="https://wa.me/923335224279" target="_blank" class="btn btn-whatsapp">Direct WhatsApp Line</a>
+                        <a href="Ahsan_Ali_CV.pdf" target="_blank" class="btn btn-outline" style="border-color: white; color: white;">Download Professional CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61590220994623" target="_blank" class="fb-icon-simple" title="Follow us on Facebook">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 MMM CCTV & Networking Services. All Rights Reserved. Managed by Ahsan Ali.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Elite Float -->
+    <a href="https://wa.me/923335224279" target="_blank" class="wa-float">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.628 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script>
+        // --- Navbar Shadow Logic ---
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // --- Mobile Menu Toggle ---
+        const toggle = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('mobile-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+                toggle.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // --- FAQ Accordion ---
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        // --- Scroll Reveal Animation ---
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) el.classList.add('active');
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+    </script>
+</body>
+</html>
